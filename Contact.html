@@ -17,9 +17,7 @@
       <h1 id="main">Contact </h1>
     <p> Contact me </p>
 
-   <!DOCTYPE html>
-<html lang="en">
-<head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
@@ -68,7 +66,6 @@
             background: #4cae4c;
         }
     </style>
-</head>
 <body>
     <div class="container">
         <h2>Contact Us</h2>
@@ -93,7 +90,21 @@
 </body>
 </html>
 
-  
+  <html>
+<body>
+<!-- This PHP code will loop through all of the input fields and output the IDs and names. Both options of the get and post methods are checked. -->
+<?php
+
+foreach($_POST as $key =>$value){
+    echo $key . ": " . $value . "<br/>";
+}
+foreach($_GET as $key =>$value){
+    echo $key . ": " . $value . "<br/>";
+}
+
+?>
+</body>
+</html> 
     <h2 class="headings"> Social Media </h2>
     <p>Facebook</p>
     <p>Instagram</p>
