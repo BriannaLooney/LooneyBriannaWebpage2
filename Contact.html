@@ -13,21 +13,22 @@
         </style>
     </head>
 <body>
-    <h3>Contact Us</h3>
-    <p>   <a href="index"> Home </a></p>
-     <form action="greet_user.php" method="POST">
-        
-         <input name="name" placeholder="Name"/>
-         <br />
-           <input name="email" type="email" placeholder="email"/>
-         <br />
-           <input name="message" type= "message" placeholder="Message" />
-          <br />
-         <button type="submit">Submit</button>
-     </form>
-    <h1 id="main">contact </h1>
-    <p> Contact me </p>
-
+    <html>
+<body>
+    <form method="get" action="greet_user.php">
+    Name
+        <input type="text" name="name">
+        <br>
+        <input type="text" name="email">
+        <br>
+         <input type="text" name="Message">
+        <br>
+         <input type="submit" name="Submit">
+    </form>
+    
+    <a href="index.php">reset</a>
+    </body>
+    </html>
 
   
     <h2 class="headings"> Social Media </h2>
