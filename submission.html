@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    <title> Brianna Looney's Webpage </title>
- 
-        <style>
-            #main{
-                color: hotpink;
-                text-align: center;
-            }
-            .headings{
-                background-color: paleturquoise;
-            }
-        </style>
-    </head>
-<body>
-<h1 id="main"> Thank You! </h1>
-    <p> We will be in touch! </p>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-<p>   <a href="index"> Home </a></p>
-    
-   
-</body>
-</html>
+    // Process the data...
+    // For example, send an email or store it in a database
+
+    // Redirect or display a message
+    echo "Thank you for your submission!";
+}
+?>
