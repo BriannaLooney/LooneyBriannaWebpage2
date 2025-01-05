@@ -2,13 +2,18 @@ var $ = function (id) { return document.getElementById(id); };
 
 var volunteerArray = [];
 
-var displayVolunteers = function () {   
-    // display the volunteers in the text area
-    $("volunteerList").value = volunteerArray.join("\n");
+var displayVolunteers = function () {
+    // Initialize an empty string to accumulate the list of volunteers
+    var volunteerList = "";
 
-	// comment out the line above change this to a loop instead to loop through the array.
-	
-	
+    // Loop through the volunteerArray
+    for (var i = 0; i < volunteerArray.length; i++) {
+        // Append each volunteer and a newline character to the list
+        volunteerList += volunteerArray[i] + "\n";
+    }
+
+    // Set the value of the text area with the accumulated list of volunteers
+    $("volunteerList").value = volunteerList;
 };
 
 var addVolunteer = function () {
