@@ -6,7 +6,46 @@
     <style>
            body{background-color: pink}
      </style>   
-    
+  
+    <head>
+    <title>Image Cycling</title>
+     <p>   <a href="index"> Home </a></p>
+    <script>
+        function onLoadMethod(){
+            var imageLoad=new Image();
+            imageLoad.src = "banner1.jpg"
+            imageLoad.src = "banner2.jpg"
+            imageLoad.src = "banner3.jpg"
+            changeImage();
+    }
+        funstion changeImage(){
+            var imageSrcArray=['banner1.jpg', 'banner2.jpg', 'banner3.jpg']
+        var i = 0
+        var j = 10;
+        while (j > 0){
+            setTimeout(changeDisplayedImage, 5000, imageSrcArray[i]);
+            i++;
+            if (i >=imageSrcArray.length )
+                i = 0;
+            j--;
+        } 
+     }
+            
+            function changeDisplayedImage(){
+                document.getElementById('banner1').src=imageSrc
+                console.log(document.getElementById('banner1').src)
+                
+                document.getElementById('banner2').src=imageSrc
+                console.log(document.getElementById('banner2').src)
+                
+                document.getElementById('banner3').src=imageSrc
+                console.log(document.getElementById('banner3').src)
+            }
+    </script>
+    </head>
+<body onload = "onLoadMethod()">
+    </body>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Bar</title>
@@ -59,8 +98,6 @@
    
     <p>  <a href="volunteers.html"> Volunteers </a></p>
 
-    
-    <p>  <a href="imagescycle.html"> ImageCycle </a></p>
 
     <script src="js/invitation.js"></script>
     
