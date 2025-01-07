@@ -2,15 +2,16 @@
 <html>
 <head>
     <title>Image Cycling</title>
+     <p>   <a href="index"> Home </a></p>
     <script>
         function onLoadMethod(){
             var imageLoad=new Image();
-            imageLoad.src = ""
-            imageLoad.src = ""
+            imageLoad.src = "hikeview.jpg"
+            imageLoad.src = "hike22.JPG"
             changeImage();
     }
         funstion changeImage(){
-            var imageSrcArray=[]
+            var imageSrcArray=['hikeview.jpg','hike22.JPG']
         var i = 0
         var j = 10;
         while (j > 0){
@@ -23,8 +24,8 @@
      }
             
             function changeDisplayedImage(){
-                document.getElementById('image1').src=imageSrc
-                console.log(document.getElementById('image1').src)
+                document.getElementById('hikeview').src=imageSrc
+                console.log(document.getElementById('hike22').src)
             }
     </script>
     </head>
