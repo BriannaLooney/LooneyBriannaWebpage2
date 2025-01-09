@@ -20,7 +20,7 @@
 </head>
 <body>
     <h1>Dynamic Images, Events, and the DOM</h1>
-    <img id="image" src="banner1.jpg" alt="Dynamic Image">
+    <img id="banner1" src="banner1.jpg" alt="Gallery">
     <button id="changeImage">Change Image</button>
 
     <script>
@@ -31,7 +31,7 @@
             if (image.src.includes('banner1.jpg')) {
                 image.src = 'banner2.jpg';
             } else {
-                image.src = 'bannerr1.jpg';
+                image.src = 'banner1.jpg';
             }
         });
     </script>
