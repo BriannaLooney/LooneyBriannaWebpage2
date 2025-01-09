@@ -8,43 +8,35 @@
      </style>   
   
      <p>   <a href="index"> Home </a></p>
-        <img src="ptvinhike.jpg" height="400" width="400" alt="Putvin Lake Of Angels">
-  
-    <script>
-        function onLoadMethod(){
-            var imageLoad=new Image();
-            <imageLoad.src = "banner1.jpg">
-            <imageLoad.src = "https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner2.jpg">
-            <imageLoad.src = "https://raw.githubusercontent.com/BriannaLooney/LooneyBriannaWebpage2/refs/heads/main/banner3.jpg">
-            changeImage();
-    }
-        funstion changeImage(){
-            var imageSrcArray=['https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner1.jpg', 'https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner2.jpg', 'https://raw.githubusercontent.com/BriannaLooney/LooneyBriannaWebpage2/refs/heads/main/banner3.jpg']
-        var i = 0
-        var j = 10;
-        while (j > 0){
-            setTimeout(changeDisplayedImage, 5000, imageSrcArray[i]);
-            i++;
-            if (i >=imageSrcArray.length )
-                i = 0;
-            j--;
-        } 
-     }
-            
-            function changeDisplayedImage(){
-                document.getElementById('banner1').src=imageSrc
-                console.log(document.getElementById('banner1').src)
-                
-                document.getElementById('banner2').src=imageSrc
-                console.log(document.getElementById('banner2').src)
-                
-                document.getElementById('banner3').src=imageSrc
-                console.log(document.getElementById('banner3').src)
-            }
-    </script>
-<body onload = "onLoadMethod()">
-    </body>
+           <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Images and Events</title>
+    <style>
+        #image {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Images, Events, and the DOM</h1>
+    <img id="image" src="banner1.jpg" alt="Dynamic Image">
+    <button id="changeImage">Change Image</button>
 
+    <script>
+        const image = document.getElementById('image');
+        const button = document.getElementById('changeImage');
+
+        button.addEventListener('click', () => {
+            if (image.src.includes('banner1.jpg')) {
+                image.src = 'banner2.jpg';
+            } else {
+                image.src = 'bannerr1.jpg';
+            }
+        });
+    </script>
+</body>
+</html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Bar</title>
