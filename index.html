@@ -8,32 +8,21 @@
      </style>   
   
      <p>   <a href="index"> Home </a></p>
-           <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Images and Events</title>
-    <style>
-        #image {
-            width: 300px;
-            height: 300px;
-        }
-    </style>
+    <title>Cycling Banner</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Dynamic Images, Events, and the DOM</h1>
-    <img id="banner1" src="banner1.jpg" alt="Gallery">
-    <button id="changeImage">Change Image</button>
-
-    <script>
-        const image = document.getElementById('image');
-        const button = document.getElementById('changeImage');
-
-        button.addEventListener('click', () => {
-            if (image.src.includes('banner1.jpg')) {
-                image.src = 'banner2.jpg';
-            } else {
-                image.src = 'banner1.jpg';
-            }
-        });
+    <div id="banner" class="banner-container">
+        <img src="images/banner1.jpg" alt="Banner 1" class="banner-image" style="display: none;">
+        <img src="images/banner2.jpg" alt="Banner 2" class="banner-image" style="display: none;">
+        <img src="images/banner3.jpg" alt="Banner 3" class="banner-image" style="display: none;">
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
     </script>
 </body>
 </html>
