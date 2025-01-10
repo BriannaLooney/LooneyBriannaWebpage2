@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+     <head>
   <title>Homepage</title>
   <script src="script.js"></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body onload="preloadImages()">
-  <div id="banner">
-    <img id="bannerImg" src="images/banner1.jpg" alt="Banner Image">
+<body onload="preloading()">
+  <div id="gallery">
+    <img id="banner1" src="banner1.jpg" alt="Gallery Image 1" onmouseover="rolloverImage(this)" onmouseout="restoreImage(this)">
+    <img id="banner2" src="banner2.jpg" alt="Gallery Image 2" onmouseover="rolloverImage(this)" onmouseout="restoreImage(this)">
+    <img id="banner3" src="banner3.jpg" alt="Gallery Image 3" onmouseover="rolloverImage(this)" onmouseout="restoreImage(this)">
   </div>
 </body>
+</head>
     <style>
            body{background-color: pink}
      </style>   
