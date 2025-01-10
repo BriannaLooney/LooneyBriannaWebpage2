@@ -8,31 +8,7 @@
      </style>   
   
      <p>   <a href="index"> Home </a></p>
-        document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll('banner1');
-    const totalImages = images.length;
-    let currentIndex = 0;
-
-    // Preload all images
-    images.forEach((image) => {
-        const img = new Image();
-        img.src = image.getAttribute('src');
-    });
-
-    // Function to cycle images
-    const cycleImages = () => {
-        images[index.html].style.display = 'none'; // Hide current image
-        currentIndex = (currentIndex + 1) % totalImages; // Move to the next image
-        images[currentIndex].style.display = 'block'; // Display the next image
-    };
-
-    // Initial display
-    images[currentIndex].style.display = 'block';
-
-    // Set interval for cycling
-    setInterval(cycleImages, 3000); // Cycle every 3 seconds
-});
-<head>
+       
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cycling Banner</title>
@@ -45,11 +21,7 @@
         <img src="images/banner3.jpg" alt="Banner 3" class="banner-image" style="display: none;">
     </div>
     <script src="scripts.js"></script>
-</body>
-</html>
-    </script>
-</body>
-</html>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Bar</title>
