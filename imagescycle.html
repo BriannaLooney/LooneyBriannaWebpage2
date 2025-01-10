@@ -2,17 +2,19 @@
 <html>
 <head>
     <title>Image Cycling</title>
-     <p>   <a href="index"> Home </a></p>
+    
     <script>
         function onLoadMethod(){
             var imageLoad=new Image();
             imageLoad.src = "https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner1.jpg?raw=true"
             imageLoad.src = "https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner2.jpg?raw=true"
             imageLoad.src = "https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner3.jpg?raw=true"
+            
             changeImage();
     }
         funstion changeImage(){
-            var imageSrcArray=['https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner1.jpg?raw=true','https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner2.jpg?raw=true','https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner3.jpg?raw=true']
+            var imageSrcArray=
+                ['https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner1.jpg?raw=true','https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner2.jpg?raw=true','https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner3.jpg?raw=true']
         var i = 0
         var j = 10;
         while (j > 0){
