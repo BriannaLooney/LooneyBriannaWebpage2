@@ -10,7 +10,7 @@ images.forEach((image) => {
     const img = new Image();
     img.src = image;
    Preloading.push(img);
-});
+
 
 // Cycling banner
 let currentIndex = 0;
@@ -21,4 +21,4 @@ function cycleBanner() {
     bannerImage.src = images[currentIndex];
 }
 {
-setInterval(cycleBanner, 3000); // Change image every 3 seconds
+setInterval(cycleBanner, 3000); // Change image every 3 seconds}
