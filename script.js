@@ -1,15 +1,3 @@
-// Cycling banner
-let currentIndex = 0;
-const bannerImage = document.getElementById('banner-image');
-
-function cycleBanner() {
-    currentIndex = (currentIndex + 1) % images.length;
-    bannerImage.src = images[currentIndex];
-}
-
-setInterval(cycleBanner, 3000); // Change image every 3 seconds
-
-
 // Preload images
 const images = [
     'images/banner1.jpg',
@@ -24,4 +12,14 @@ images.forEach((image) => {
    Preloading.push(img);
 });
 
+// Cycling banner
+let currentIndex = 0;
+const bannerImage = document.getElementById('banner-image');
+
+function cycleBanner() {
+    currentIndex = (currentIndex + 1) % images.length;
+    bannerImage.src = images[currentIndex];
+}
+
+setInterval(cycleBanner, 3000); // Change image every 3 seconds
 
