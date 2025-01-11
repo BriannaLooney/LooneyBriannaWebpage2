@@ -20,6 +20,7 @@ function cycleBanner() {
     currentIndex = (currentIndex + 1) % images.length;
     bannerImage.src = images[currentIndex];
 }
-
+{
 setInterval(cycleBanner, 3000); // Change image every 3 seconds
 
+});
