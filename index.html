@@ -12,6 +12,24 @@
     <img id="banner2" src="banner2.jpg" alt="Gallery Image 2" onmouseover="rolloverImage(this)" onmouseout="restoreImage(this)">
     <img id="banner3" src="banner3.jpg" alt="Gallery Image 3" onmouseover="rolloverImage(this)" onmouseout="restoreImage(this)">
   </div>
+        <body onload = "onLoadMethod()">
+    <img src = "https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner1.jpg?raw=true",
+         "https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner2.jpg?raw=true",
+         "https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner3.jpg?raw=true"
+        }    
+        
+         alt = "banner1" id="banner1" onclick="changeImage()"/>
+            </body>   
+        // Cycling banner
+let currentIndex = 0;
+const bannerImage = document.getElementById('banner1');
+
+function cycleBanner() {
+    currentIndex = (currentIndex + 1) % images.length;
+    bannerImage.src = images[currentIndex];
+}
+
+setInterval(cycleBanner, 3000); // Change image every 3 seconds
 </body>
 
    
