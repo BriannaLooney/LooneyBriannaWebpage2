@@ -1,8 +1,4 @@
-<!doctype>
-<html>
-<head>
-    <title>Image Cycling</title>
-    
+
     <script>
         function onLoadMethod(){
             var imageLoad=new Image();
