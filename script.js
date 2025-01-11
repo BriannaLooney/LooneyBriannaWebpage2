@@ -5,11 +5,11 @@ const images = [
     'images/banner3.jpg'
 ];
 
-const =Preloading = [];
+const = Prelaoding = [];
 images.forEach((image) => {
     const img = new Image();
     img.src = image;
-    Preloading.push(img);
+   Prelaoding.push(img);
 });
 
 // Cycling banner
