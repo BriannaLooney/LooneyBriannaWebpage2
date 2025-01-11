@@ -5,7 +5,7 @@ const images = [
     'images/banner3.jpg'
 ];
 
-const = Prelaoding = [];
+const = Preloading = [];
 images.forEach((image) => {
     const img = new Image();
     img.src = image;
