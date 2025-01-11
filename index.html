@@ -13,19 +13,6 @@
     <img id="banner3" src="banner3.jpg" alt="Gallery Image 3" onmouseover="rolloverImage(this)" onmouseout="restoreImage(this)">
   </div>
    
-        // Cycling banner
-let currentIndex = 0;
-const bannerImage = document.getElementById('banner1');
-
-function cycleBanner() {
-    currentIndex = (currentIndex + 1) % images.length;
-    bannerImage.src = images[currentIndex];
-
-
-setInterval(cycleBanner, 3000); // Change image every 3 seconds
-
-
-   
     <div class="banner">
         <img id="banner-image" src="images/banner1.jpg" alt="Banner">
     </div>
