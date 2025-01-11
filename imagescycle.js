@@ -12,7 +12,7 @@
             
             changeImage();
     }
-        funstion changeImage(){
+        function changeImage(){
             var imageSrcArray=
                 ['https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner1.jpg?raw=true','https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner2.jpg?raw=true','https://github.com/BriannaLooney/LooneyBriannaWebpage2/blob/main/banner3.jpg?raw=true']
         var i = 0
