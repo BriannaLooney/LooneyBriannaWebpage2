@@ -7,19 +7,8 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
   <style>
-     
-     </style>
-<body onload="onLoadMethod()">
-  <div id="gallery">
-       <script src="script.js"></script>
-    <img id="banner1" src="banner1.jpg" alt="Gallery Image 1" onmouseover="rolloverImage(this)" onmouseout="restoreImage(this)">
-    <img id="banner2" src="banner2.jpg" alt="Gallery Image 2" onmouseover="rolloverImage(this)" onmouseout="restoreImage(this)">
-    <img id="banner3" src="banner3.jpg" alt="Gallery Image 3" onmouseover="rolloverImage(this)" onmouseout="restoreImage(this)">
-
-  
-        alt = "banner1" id="banner1" onclick="changeImage()"/>
-      
-        // Cycling banner
+     alt = "banner1" id="banner1" onclick="changeImage()"/>
+      // Cycling banner
 let currentIndex = 0;{
 const bannerImage = document.getElementById('banner1');
 }
@@ -29,6 +18,15 @@ function cycleBanner() {
 }
 
 setInterval(cycleBanner, 3000); // Change image every 3 seconds
+     </style>
+<body onload="onLoadMethod()">
+  <div id="gallery">
+       <script src="script.js"></script>
+    <img id="banner1" src="banner1.jpg" alt="Gallery Image 1" onmouseover="rolloverImage(this)" onmouseout="restoreImage(this)">
+    <img id="banner2" src="banner2.jpg" alt="Gallery Image 2" onmouseover="rolloverImage(this)" onmouseout="restoreImage(this)">
+    <img id="banner3" src="banner3.jpg" alt="Gallery Image 3" onmouseover="rolloverImage(this)" onmouseout="restoreImage(this)">
+
+  
   </div>
     </body>
 
