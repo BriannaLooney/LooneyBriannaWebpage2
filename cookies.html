@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> mycookies </title>
+   <script>
+       var mycookies = [];
+       function setcookie()
+       {
+    
+    mycookies["uname"]=document.getElementById("name").value;
+    mycookies["uage"]=document.getElementById("age").value;
+    document.cookie = "";
+    var cookieString= "";
+    for(var key in mycookies)
+               {
+                   cookieString=key+"="+mycookies[key];
+                   document.cookie=cookieString;
+               }
+           document.getElementById("nameOutput").innerHTML=cookieString;
+       }
+       function readCookie()
+       {
+           mycookies = [];
+           var keyvalue = document.cookie.split("=");
+           for (var id in keyvalue)
+        {
+            var cookie = keyvalue[id].split("=");
+            mycookies[cookies[0].trim()]=cookie[1];
+        }
+           document.getElementById("nameOutput").value=mycookies["uname"];
+           document.getElementById("nameOutput1").value=mycookies["uage"];
+       }
+    </script>
+    </head>
+    <body>
+        <h2> Enter name:</h2><input type="text" id='name'><input type="text" id='age'>
+        <input type="button" value = "Set Cookie" onclick="setCookie()">
+        <input type="button" value = "Read Cookie" onclick="readCookie()">
+        <p id = "nameOutput"></p>
+         <p id = "nameOutput1"></p> 
+    </body>
+</html>
