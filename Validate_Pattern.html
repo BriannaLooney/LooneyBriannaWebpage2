@@ -25,4 +25,39 @@
         <input type="submit" name="Submit">
 </form>
 </body>
+<head>
+    <title> Query String URL</title>
+    </head>
+        <script>
+        function display(){
+            var url=window.location.href
+            url+="?name=ABC&location=USA&year=2019"
+            document.getElementById("keyvalue").innerHTML=url
+            var key=[]
+            var value=[]
+            var string1=url.split("?")[1].split("&")
+            for(var initiallyVar of string1)
+                {
+                    varstr=initialVar.split("=")
+                    key.push(str[0])
+                    value.push(str[1])
+                }
+            var counter=key.length
+            var displayString="
+            for(var initialVar=0; initialVar<counter; intialVar++)
+                {
+                    displayString+=key[intialVar]+';'+value[initialVar]+'<br/>'
+                }
+            document.getElementById["displayKey").innerHTML=displayString
+        }
+        
+    </script>
+    
+    <body>
+    <h3> Key-Value pairs:</h3><br />
+        <div id="keyvalue"> URL displayed here </div><br/>
+        <div id="displaykey"> Value displayed here </div><br/>
+    </body>
+</html>
+
 </html>
